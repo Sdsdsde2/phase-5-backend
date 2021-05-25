@@ -1,10 +1,10 @@
-class RegistrationsController.rb < ApplicationController
+class RegistrationsController < ApplicationController
     def create
         user = User.create!(
             name: params[:name],
             username: params[:username],
             password: params[:password],
-            password_confirmation: params[:password],
+            password_confirmation: params[:password_confirmation],
             credits: 50
         )
 
