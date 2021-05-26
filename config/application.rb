@@ -21,6 +21,8 @@ Bundler.require(*Rails.groups)
 
 module Phase5Backend
   class Application < Rails::Application
+    config.action_mailer.default_url_options = { host: "example.com" }
+    
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 

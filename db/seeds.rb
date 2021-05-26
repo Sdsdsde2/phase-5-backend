@@ -5,6 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.destory_all
-
-u1 = User.create(name: "Shane", username: "sdsdsde", password: "1234", credits: 400)

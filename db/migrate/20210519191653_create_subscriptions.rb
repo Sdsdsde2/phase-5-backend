@@ -3,7 +3,9 @@ class CreateSubscriptions < ActiveRecord::Migration[6.1]
     create_table :subscriptions do |t|
       t.integer :user_id
       t.integer :time
-      t.boolean :is_active?, :default => false
+      t.datetime :current_period_start, null: false
+      t.datetime :current_period_end, null: false
+      t.text :status
       t.timestamps
     end
   end
