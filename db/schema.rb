@@ -58,9 +58,9 @@ ActiveRecord::Schema.define(version: 2021_05_26_012050) do
 
   create_table "subscriptions", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "time"
-    t.datetime "current_period_start", null: false
-    t.datetime "current_period_end", null: false
+    t.integer "day"
+    t.integer "hour"
+    t.integer "minute"
     t.text "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

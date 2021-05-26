@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :authorized, only: [:show]
+    before_action :authorized, only: [:show, :update]
 
     def index
       @users = User.all
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     end
 
-    def edit
+    def update
       @user = User.find(params[:id])
     end
   
