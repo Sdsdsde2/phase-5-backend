@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get :logged_in, to: "sessions#logged_in"
   root to: "static#home"
   resources :subscriptions, only: [:create, :update, :show, :index]
+  resources :reviews, only: [:create, :show, :index]
 end
