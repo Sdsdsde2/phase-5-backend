@@ -1,24 +1,28 @@
-# README
+# Easy Remove Virtual Machine (back-end)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+E.R.V.M was my capstone project for phase-5 at Flatiron School.
 
-Things you may want to cover:
+## Languages
 
-* Ruby version
+This project was built with:
+-Ruby
+-Rails
+-JavaScript
+-React
+-ReactRoutes
+-Stripe
+-NoVNC
+-TightVNC
+-NodeJS
 
-* System dependencies
+## Functionality
 
-* Configuration
+Users can login or create a new account.
+Users can sign out or view their account page.
+Users can purchase credits on their account through the Stripe API.
+Users can use their account's credits towards a subscription for a Virtual Machine.
+Users can connect to, leave reviews for, see the time left on, and terminate their Virtual Machine subscriptions.
 
-* Database creation
+## Background
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project was made with the idea of automating sales in mind. If someone wanted to pay for you to login to their account on a game and use a tool to get certain items, it would be time consuming and rely on that person trusting you with their login information. This solves that problem. Not only do they not have to give you their private information, they can do the work themselves without you having to give them your tools. They simply connect to the Virtual Machine, start the game, and then farm for their items.
